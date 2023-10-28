@@ -1,9 +1,5 @@
 #include "port_u8g2.h"
-#include <string>
-#include <iostream>
 #include <unistd.h>
-#include <wiringPi.h>
-#include <wiringPiI2C.h>
 #include <linux/i2c.h>
 #include <linux/i2c-dev.h>
 #include <sys/types.h>

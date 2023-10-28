@@ -8,5 +8,5 @@ include_directories(u8g2)
 set(SRC main.cpp port_u8g2.cpp port_u8g2.h)
 add_executable(${PROJECT_NAME} ${SRC})
 
-target_link_libraries(${PROJECT_NAME} u8g2 wiringPi)
+target_link_libraries(${PROJECT_NAME} u8g2)
 
