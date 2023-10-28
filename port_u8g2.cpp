@@ -22,7 +22,7 @@ unsigned char base_i2c_write(unsigned char device_addr, unsigned char *buff, int
     data.msgs[0].buf = sendbuf;
     memset(sendbuf, 0, 255);
     memcpy( sendbuf, buff, ByteNo);
-    ioctl(fd,I2C_RDWR,(unsigned long)&data);
+    ioctl(fd,I2C_RDWR,&data);
     close(fd);
     return 1;
 }
